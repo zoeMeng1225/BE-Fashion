@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js鼠标经过切换图片</title>
+    <script>
+        window.onload = function () {
+            //获取图片
+            var img = document.getElementById("img");
+ 
+            //鼠标经过图片
+            img.onmouseover = function () {
+                this.src = "imgs/blue.jpg"
+            }
+ 
+            //鼠标离开图片
+            img.onmouseout = function () {
+                this.src = "imgs/yellow.png";
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="img" src="image/9.jpg"/>
+</body>
+</html>
+
+--------------------- 
+作者：宋发元 
+来源：CSDN 
+原文：https://blog.csdn.net/u011019141/article/details/77371706 
+版权声明：本文为博主原创文章，转载请附上博文链接！
